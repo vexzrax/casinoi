@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Juegos de Azar Exclusivos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Juegos de Azar Exclusivos</h1>
+    <p class="subtitle">Elige tu suerte en nuestra colección única</p>
+  </header>
+  <main>
+    <section class="games">
+      <div class="game-card" id="ruleta-card">
+        <img src="roulette.jpg" alt="Ruleta clásica" class="game-img">
+        <h2>Ruleta Clásica</h2>
+        <p>Gira la ruleta y desafía el destino. ¿Dónde caerá la bola?</p>
+        <button onclick="showGame('ruleta')">Jugar</button>
+      </div>
+      <div class="game-card" id="slot-card">
+        <img src="slot.jpg" alt="Tragamonedas moderno" class="game-img">
+        <h2>Tragamonedas Moderno</h2>
+        <p>Tira la palanca y busca la combinación ganadora en nuestro slot minimalista.</p>
+        <button onclick="showGame('slot')">Jugar</button>
+      </div>
+      <div class="game-card" id="premios-card">
+        <img src="wheel.jpg" alt="Girar otra ruleta original" class="game-img">
+        <h2>Ruleta de Premios</h2>
+        <p>Una ruleta con premios únicos y reglas diferentes. ¡Atrévete a probar!</p>
+        <button onclick="showGame('premios')">Jugar</button>
+      </div>
+      <div class="game-card" id="imaginario-card">
+        <img src="mystery.jpg" alt="Juego misterioso original" class="game-img">
+        <h2>Dado Elemental</h2>
+        <p>Lanza el dado mágico de los elementos y descubre tu fortuna.</p>
+        <button onclick="showGame('imaginario')">Jugar</button>
+      </div>
+    </section>
+    <section id="game-modal" class="modal hidden">
+      <div class="modal-content" id="modal-content">
+        <!-- Aquí se cargan los juegos -->
+      </div>
+      <button class="close-modal" onclick="closeModal()">Cerrar</button>
+    </section>
+  </main>
+  <footer>
+    <span>© 2025 Juegos de Azar Exclusivos. Inspirado en el azar, diseñado para vos.</span>
+  </footer>
+  <script src="games.js"></script>
+</body>
+</html>
